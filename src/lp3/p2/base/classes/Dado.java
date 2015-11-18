@@ -1,5 +1,5 @@
 package lp3.p2.base.classes;
-
+//guilherme esteve aqui
 import java.util.Random;
 
 public class Dado {
