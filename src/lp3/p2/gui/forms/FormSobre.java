@@ -64,50 +64,35 @@ public class FormSobre extends FormGenerico implements ActionListener, PropertyC
     
 	private void conteudoForm() throws ParseException{
 		
-		Font fonte 					= new Font("Serif", Font.BOLD,22);
+		Font fonte 			= new Font("Serif", Font.BOLD,22);
 		
-		JLabel lblFaculdade			= new JLabel("Funda��o Santo Andr�");
-		JLabel lblCurso				= new JLabel("Curso de Engenharia da Computa��o");
-		JLabel lblTCC			  	= new JLabel("Trabalho de Conclus�o de Curso");
-		JLabel lblTituloTrabalho	= new JLabel("Banco Imobili�rio Simplificado em Realidade Aumentada");
-		JLabel lblIntegrantes		= new JLabel("Integrantes do Grupo:");    
-		JLabel lblIntegrante01		= new JLabel("Adriana Kaoru Takagi � 04577-7");
-		JLabel lblIntegrante02   	= new JLabel("Aline Martins Moreira � 04583-6");
-		JLabel lblIntegrante03   	= new JLabel("Iris Milena Barberi Donega � 04568-6");
-		JLabel lblIntegrante04   	= new JLabel("Livia Martins Zeferino � 04648-6");
-		JLabel lblIntegrante05   	= new JLabel("Mariana Martins Pedro � 04606-6");
+		JLabel lblFaculdade		= new JLabel("IFSP São Carlos");
+		JLabel lblCurso			= new JLabel("Análise e Desenvolvimento de Sistemas");
+		JLabel lblTituloTrabalho	= new JLabel("Banco Imobiliário Simplificado em Realidade Aumentada");
+		JLabel lblIntegrantes		= new JLabel("Dupla:");    
+		JLabel lblIntegrante01		= new JLabel("Guilherme Mourão Sansoni - 120128x");
+		JLabel lblIntegrante02   	= new JLabel("João Antônio Arantes Gonçalves - 1200615");
 		
 		lblFaculdade.setForeground(Color.BLUE);
 		lblFaculdade.setFont(fonte);
 		lblCurso.setForeground(Color.BLUE);
-		lblTCC.setForeground(Color.BLUE);
 		lblTituloTrabalho.setForeground(Color.BLUE);
 		lblIntegrantes.setForeground(Color.RED);
 		lblIntegrante01.setForeground(Color.RED);
 		lblIntegrante02.setForeground(Color.RED);
-		lblIntegrante03.setForeground(Color.RED);
-		lblIntegrante04.setForeground(Color.RED);
-		lblIntegrante05.setForeground(Color.RED);
 		
 		contentPane.add(lblFaculdade);
         contentPane.add(lblCurso);
-        contentPane.add(lblTCC);
         contentPane.add(lblTituloTrabalho);
         contentPane.add(lblIntegrantes);
         contentPane.add(lblIntegrante01);
         contentPane.add(lblIntegrante02);
-        contentPane.add(lblIntegrante03);
-        contentPane.add(lblIntegrante04);
-        contentPane.add(lblIntegrante05);
         
         layout.putConstraint(SpringLayout.WEST,lblFaculdade,480,SpringLayout.WEST, contentPane);
         layout.putConstraint(SpringLayout.NORTH,lblFaculdade,55,SpringLayout.NORTH, contentPane);
         
         layout.putConstraint(SpringLayout.WEST,lblCurso,480,SpringLayout.WEST, contentPane);
         layout.putConstraint(SpringLayout.NORTH,lblCurso,100,SpringLayout.NORTH, contentPane);
-        
-        layout.putConstraint(SpringLayout.WEST,lblTCC,480,SpringLayout.WEST, contentPane);
-        layout.putConstraint(SpringLayout.NORTH,lblTCC,145,SpringLayout.NORTH, contentPane);
         
         layout.putConstraint(SpringLayout.WEST,lblTituloTrabalho,480,SpringLayout.WEST, contentPane);
         layout.putConstraint(SpringLayout.NORTH,lblTituloTrabalho,190,SpringLayout.NORTH, contentPane);
@@ -121,16 +106,6 @@ public class FormSobre extends FormGenerico implements ActionListener, PropertyC
                 
         layout.putConstraint(SpringLayout.WEST,lblIntegrante02,480,SpringLayout.WEST, contentPane);
         layout.putConstraint(SpringLayout.NORTH,lblIntegrante02,325,SpringLayout.NORTH, contentPane);
-        
-        layout.putConstraint(SpringLayout.WEST,lblIntegrante03,480,SpringLayout.WEST, contentPane);
-        layout.putConstraint(SpringLayout.NORTH,lblIntegrante03,370,SpringLayout.NORTH, contentPane);
-        
-        layout.putConstraint(SpringLayout.WEST,lblIntegrante04,480,SpringLayout.WEST, contentPane);
-        layout.putConstraint(SpringLayout.NORTH,lblIntegrante04,415,SpringLayout.NORTH, contentPane);
-        
-        layout.putConstraint(SpringLayout.WEST,lblIntegrante05,480,SpringLayout.WEST, contentPane);
-        layout.putConstraint(SpringLayout.NORTH,lblIntegrante05,460,SpringLayout.NORTH, contentPane);
-
 	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
